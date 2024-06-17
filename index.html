@@ -42,18 +42,37 @@
         .github-link a:hover {
             background: #555;
         }
+        .images {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+            gap: 20px;
+            margin: 20px 0;
+        }
+        .image-item {
+            text-align: center;
+        }
+        .image-item img {
+            width: 100%;
+            height: auto;
+            border-radius: 8px;
+        }
+        .image-item p {
+            margin-top: 10px;
+            font-size: 0.9em;
+            color: #666;
+        }
     </style>
 </head>
 <body>
     <div class="container">
-        <h1>Welcome to My Java Game!</h1>
+        <h1>Code Masters</h1>
         <p>
-            This is a simple web page to showcase the game I have developed in Java.
+            This is a simple web page to showcase the group project made in the subject INF112 @ University of Bergen, Spring 2024.
             Below, you can find a link to the GitHub repository where the source code
             and additional details about the game are available.
         </p>
         <div class="github-link">
-            <a href="https://github.com/frheg/INF112_GroupProject_V24" target="_blank">View the Game on GitHub</a>
+            <a href="https://github.com/frheg/frheg.github.no" target="_blank">View the Game on GitHub</a>
         </div>
         <h2>Game Description</h2>
         <p>
@@ -63,13 +82,36 @@
             entertained for hours. The game features multiple levels, engaging graphics,
             and intuitive controls.
         </p>
+        <h2>Game Images</h2>
+        <div class="images">
+            <div class="image-item">
+                <img src="Resources/Images/HomeScreen.png" alt="HomeScreen">
+                <p>Screenshot 1: HomeScreen</p>
+            </div>
+            <div class="image-item">
+                <img src="Resources/Images/Ingame1.png" alt="Ingame1">
+                <p>Screenshot 2: In-game</p>
+            </div>
+            <div class="image-item">
+                <img src="Resources/Images/WeaponSelectionScreen.png" alt="WeaponSelectionScreen">
+                <p>Screenshot 3: Weapon selection</p>
+            </div>
+            <div class="image-item">
+                <img src="Resources/Images/Ingame2.png" alt="Ingame2">
+                <p>Screenshot 4: In-game, taking damage</p>
+            </div>
+            <div class="image-item">
+                <img src="Resources/Images/GameOverScreen.png" alt="GameOverScreen">
+                <p>Screenshot 5: Game over!</p>
+            </div>
+        </div>
         <h2>How to Play</h2>
         <p>
             <!-- Add instructions on how to play your game here -->
             1. Download the game from the GitHub repository.<br>
             2. Follow the instructions in the README file to set up and run the game.<br>
-            3. Use the arrow keys to navigate and the space bar to interact with objects.<br>
-            4. Have fun and try to complete all the levels!
+            3. Use the arrow keys to navigate and mousepad to attack.<br>
+            4. Have fun and see how long you can survive!
         </p>
     </div>
 </body>
