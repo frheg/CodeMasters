@@ -70,61 +70,123 @@
             color: #fff;
             border-radius: 8px;
         }
+        .section {
+            display: none;
+        }
+        .section.active {
+            display: block;
+        }
+        .nav-buttons {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        .nav-buttons button {
+            background: #333;
+            color: #fff;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            margin: 0 10px;
+        }
+        .nav-buttons button:hover {
+            background: #555;
+        }
     </style>
 </head>
 <body>
     <div class="container">
         <h1>Code Masters</h1>
-        <p>
-            This is a simple web page to showcase the group project made in the subject INF112 @ University of Bergen, Spring 2024.
-            Below, you can find a link to the GitHub repository where the source code
-            and additional details about the game are available.
-        </p>
-        <div class="github-link">
-            <a href="https://github.com/frheg/INF112_GroupProject_V24" target="_blank">View the Game on GitHub</a>
+        <div class="nav-buttons">
+            <button onclick="showSection('section1')">Game Info</button>
+            <button onclick="showSection('section2')">Blog</button>
         </div>
-        <h2>Game Description</h2>
-        <p>
-            <!-- Add a brief description of your game here -->
-            You are trapped in a dungeon and has to find a way out! 
-            Kill all the friendly-looking enemies to free yourself. 
-            There will be multiple waves of enemies. Can you survive them all?
-        </p>
-        <h2>Game Images</h2>
-        <div class="images">
-            <div class="image-item">
-                <img src="Resources/Images/HomeScreen.png" alt="HomeScreen">
-                <p>Screenshot 1: HomeScreen</p>
+        <div id="section1" class="section active">
+            <p>
+                This is a simple web page to showcase the group project made in the subject INF112 @ University of Bergen, Spring 2024.
+                Below, you can find a link to the GitHub repository where the source code
+                and additional details about the game are available.
+            </p>
+            <div class="github-link">
+                <a href="https://github.com/frheg/INF112_GroupProject_V24" target="_blank">View the Game on GitHub</a>
             </div>
-            <div class="image-item">
-                <img src="Resources/Images/Ingame1.png" alt="Ingame1">
-                <p>Screenshot 2: In-game</p>
+            <h2>Game Description</h2>
+            <p>
+                You are trapped in a dungeon and have to find a way out!
+                Kill all the friendly-looking enemies to free yourself.
+                There will be multiple waves of enemies. Can you survive them all?
+            </p>
+            <h2>Game Images</h2>
+            <div class="images">
+                <div class="image-item">
+                    <img src="Resources/Images/HomeScreen.png" alt="HomeScreen">
+                    <p>Screenshot 1: HomeScreen</p>
+                </div>
+                <div class="image-item">
+                    <img src="Resources/Images/Ingame1.png" alt="Ingame1">
+                    <p>Screenshot 2: In-game</p>
+                </div>
+                <div class="image-item">
+                    <img src="Resources/Images/WeaponSelectionScreen.png" alt="WeaponSelectionScreen">
+                    <p>Screenshot 3: Weapon selection</p>
+                </div>
+                <div class="image-item">
+                    <img src="Resources/Images/Ingame2.png" alt="Ingame2">
+                    <p>Screenshot 4: In-game, taking damage</p>
+                </div>
+                <div class="image-item">
+                    <img src="Resources/Images/GameOverScreen.png" alt="GameOverScreen">
+                    <p>Screenshot 5: Game over!</p>
+                </div>
             </div>
-            <div class="image-item">
-                <img src="Resources/Images/WeaponSelectionScreen.png" alt="WeaponSelectionScreen">
-                <p>Screenshot 3: Weapon selection</p>
-            </div>
-            <div class="image-item">
-                <img src="Resources/Images/Ingame2.png" alt="Ingame2">
-                <p>Screenshot 4: In-game, taking damage</p>
-            </div>
-            <div class="image-item">
-                <img src="Resources/Images/GameOverScreen.png" alt="GameOverScreen">
-                <p>Screenshot 5: Game over!</p>
-            </div>
+            <h2>How to Play</h2>
+            <p>
+                1. Download the game from the GitHub repository.<br>
+                2. Follow the instructions in the README file to set up and run the game.<br>
+                3. Use the arrow keys or WASD keys to navigate and mousepad to attack.<br>
+                4. Have fun and see how long you can survive!
+            </p>
         </div>
-        <h2>How to Play</h2>
-        <p>
-            <!-- Add instructions on how to play your game here -->
-            1. Download the game from the GitHub repository.<br>
-            2. Follow the instructions in the README file to set up and run the game.<br>
-            3. Use the arrow keys or WASD keys to navigate and mousepad to attack.<br>
-            4. Have fun and see how long you can survive!
-        </p>
+        <div id="section2" class="section">
+            <h2>Development Blog</h2>
+            <p>
+                <!-- Add your blog content here -->
+                Welcome to the development blog for our game project! Here, we'll share insights, challenges, and progress updates as we work on this exciting project.
+            </p>
+            <p>
+                <strong>Week 1: Initial Planning</strong><br>
+                Our team gathered to brainstorm ideas for the game. We decided on a dungeon escape theme with multiple waves of enemies. The planning phase involved outlining the game's mechanics, levels, and initial design.
+            </p>
+            <p>
+                <strong>Week 2: Prototyping</strong><br>
+                We started prototyping the basic game mechanics. This included character movement, basic enemy AI, and initial level design. Early prototypes helped us identify key challenges and areas for improvement.
+            </p>
+            <p>
+                <strong>Week 3: Art and Design</strong><br>
+                Our artists began creating the visual assets for the game. This included character sprites, enemy designs, and environmental elements. The game's visual style started to take shape.
+            </p>
+            <p>
+                <strong>Week 4: Development and Testing</strong><br>
+                The development team continued to implement game mechanics and integrate the art assets. We also began internal testing to identify and fix bugs. Playtesting sessions provided valuable feedback for refining the gameplay experience.
+            </p>
+            <p>
+                <strong>Week 5: Finalizing the Game</strong><br>
+                As we approached the deadline, we focused on polishing the game. This included balancing the difficulty, adding sound effects and music, and ensuring a smooth user experience. We also prepared the game's documentation and set up the GitHub repository.
+            </p>
+        </div>
     </div>
     <footer>
         <p>Developed by:</p>
         <p>Sara Stavang Dahle, Ella Mathilde Solberg, Fredric Hegland, Fredrik Grahm-Haga, Idris Elmi, Kenan Inci</p>
+        <p>&copy; 2024 Code Masters. All rights reserved.</p>
     </footer>
+    <script>
+        function showSection(sectionId) {
+            document.querySelectorAll('.section').forEach(section => {
+                section.classList.remove('active');
+            });
+            document.getElementById(sectionId).classList.add('active');
+        }
+    </script>
 </body>
 </html>
